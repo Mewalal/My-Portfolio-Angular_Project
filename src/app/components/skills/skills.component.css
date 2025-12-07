@@ -1,0 +1,616 @@
+
+/* //////SKILL KA CSS//////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////SKILL KA CSS//////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////SKILL KA CSS//////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* section{
+  display: flex;
+  flex-wrap: wrap;
+}
+.container1{
+  width: 600px;
+  height: 500px;
+  padding: 75px 90px;
+  margin-left: 120px;
+}
+.heading1{
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: 10px;
+  margin-bottom: 50px;
+
+}
+.bars{
+  font-size: 23px;
+}
+.Technical-bars .bar{
+  margin-top: 40px 0;
+}
+.Technical-bars .bar:first-child{
+  margin-top:0;
+}
+.Technical-bars .bar:last-child{
+  margin-top:0;
+}
+.Technical-bars .bar .info{
+  margin-bottom:5px;
+
+}
+.Technical-bars .bar .info span{
+  font-size: 17px;
+  font-weight: 500;
+  animation:showText 0.51 1s linear forwards;
+  opacity: 0;
+}
+.Technical-bars .bar .progress-line{
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  height:5px;
+  background-color: #000000;
+  animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
+  transform: scale(0);
+  transform-origin: left;
+
+}
+
+@keyframes animate{
+  100% {
+    transform: scaleX(1);
+
+  }
+}
+.Technical-bars .bar .progress-line span{
+height: 100%;
+background-color: #0ef;
+position: absolute;
+border-radius: 10px;
+animation: animate 1s 1s cubic-bezier(1,0,0,5,1) forwards;
+transform: scale(0);
+transform-origin:left;
+}
+.progress-line-html span{
+  width: 80%;
+}
+.progress-line-css span{
+  width: 70%;
+}
+.progress-line-javascript span{
+  width: 780%;
+}
+.progress-line-angular span{
+  width: 70%;
+}
+.progress-line-java span{
+  width: 60%;
+}
+.progress-line-spring-boot span{
+  width: 40%;
+}
+.progress-line-bootstrap span {
+  width: 90%;
+}
+.progress-line span::after{
+  position: absolute;
+  padding: 1px 8px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 3px;
+  right: -20px;
+  top: -20;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+
+}
+.progress-line-html span::after {
+  content: "80%";
+}
+.progress-line-css span::after {
+  content: "70%";
+}
+.progress-line-javascript span::after {
+  content: "78%";
+}
+.progress-line-angular span::after {
+  content: "70%";
+}
+.progress-line-java span::after {
+  content: "60%";
+}
+.progress-line-spring-boot span::after {
+  content: "40%";
+}
+.progress-line-bootstrap span::after {
+  content: "90%";
+}
+
+.progress-line span::before{
+
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  top: -10;
+  right: 0;
+  animation: showText 0.5s 1.5 linear forwards;
+  opacity: 0;
+
+}
+@keyframes showText{
+  100%{
+    opacity: 1;
+
+  }
+}
+.redial-bars{
+  width: 100%;
+  display: flex;
+ justify-content: space-evenly;
+ align-items: flex-start;
+}
+.redial-bars .redial-bar{
+  width: 50px;
+  height: 170px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.redial-bars .redial-bar svg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)rotate(-90deg);
+  width: 120px;
+  height: 160px;
+
+}
+.redial-bars .redial-bar .progress-bar{
+  stroke-width: 10;
+  stop-color: black;
+  fill: transparent;
+  stroke-dashoffset: 502;
+  stroke-dasharray: 502;
+  stroke-linecap: round;
+  animation: animate-bar 1s linear forwards;
+
+
+}
+@keyframes animate-bar{
+  100%{
+    stroke-dashoffset: -1;
+
+  }
+}
+.path{
+  stroke-width: 10;
+  stroke-dasharray: 502;
+  stroke: #0ef;
+  fill: transparent;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+
+}
+.path-1{animation:animate-path1 1s linear forwards}
+.path-2{animation:animate-path2 1s linear forwards}
+.path-3{animation:animate-path3 1s linear forwards}
+.path-4{animation:animate-path4 1s linear forwards}
+
+@keyframes animate-path1{
+  100%{
+    stroke-dashoffset: 50;
+
+  }
+}
+@keyframes animate-path2{
+  100%{
+    stroke-dashoffset: 175;
+
+  }
+}
+@keyframes animate-path3{
+  100%{
+    stroke-dashoffset: 125;
+
+  }
+}
+@keyframes animate-path4{
+  100%{
+    stroke-dashoffset: 75;
+
+  }
+}
+.redial-bar .percentage{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50, -50);
+font-size: 17px;
+font-weight: 500;
+animation: showText 0.5s 1s linear forwards;
+opacity: 0;
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    gap: 50px;
+}
+.sub-title {
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 70px;
+}
+
+.sub-title span {
+  color: #0ef;
+}
+
+  
+  /* Left Side - Technical Skills */
+  .container1 {
+    width: 48%; /* Adjust width for left side */
+    height:86vh;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    animation-delay: 1s;
+    box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #012290f7;
+  }
+  /* Common Hover Effect for Containers */
+  .container1 {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  .container1:hover {
+    transform: translateY(-10px); /* Slight lift effect */
+    box-shadow: 0 0 30px #0ef, 0 0 50px #06d6a0; /* Neon glow effect */
+  }
+  
+  
+  /* Heading Styling */
+  .heading1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #0ef;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset:10px;
+    text-decoration-thickness: 5px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+  .bar{
+    font-size: 23px;
+  }
+  .Technical-bars .bar{
+    margin-top: 40px 0;
+  }
+  .Technical-bars .bar:first-child{
+    margin-top:0;
+  }
+  .Technical-bars .bar:last-child{
+    margin-top:0;
+  }
+  .Technical-bars .bar .info{
+    margin-bottom:5px;
+  
+  }
+  .Technical-bars .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    animation:showText 0.51 1s linear forwards;
+    opacity: 0;
+  }
+  .Technical-bars .bar .progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height:5px;
+    background-color: red;
+    animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
+    transform: scale(0);
+    transform-origin: left;
+  
+  }
+  
+  @keyframes animate{
+    100% {
+      transform: scaleX(1);
+  
+    }
+  }
+  .Technical-bars .bar .progress-line span{
+  height: 100%;
+  background-color: #0ef;
+  position: absolute;
+  border-radius: 10px;
+  animation: animate 1s 1s cubic-bezier(1,0,0,5,1) forwards;
+  transform: scale(0);
+  transform-origin:left;
+  }
+  .progress-line.html span{
+    width: 80%;
+  }
+  .progress-line.css span{
+    width: 70%;
+  }
+  .progress-line.javascript span{
+    width: 80%;
+  }
+  .progress-line.angular span{
+    width: 70%;
+  }
+  .progress-line.java span{
+    width: 60%;
+  }
+  .progress-line.spring_boot span{
+    width: 40%;
+  }
+  .progress-line.bootstrap span {
+    width: 90%;
+  }
+
+  .progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    right: -20px;
+    top: -20;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+  
+  }
+  .progress-line.html span::after {
+    content: "80%";
+  }
+  .progress-line.css span::after {
+    content: "70%";
+  }
+  .progress-line.javascript span::after {
+    content: "78%";
+  }
+  .progress-line.angular span::after {
+    content: "70%";
+  }
+  .progress-line.java span::after {
+    content: "60%";
+  }
+  .progress-line.spring_boot span::after {
+    content: "80%";
+  }
+  .progress-line.bootstrap span::after {
+    content: "90%";
+  }
+  
+  .progress-line span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top: -10;
+    right: 0;
+    animation: showText 0.5s 1.5 linear forwards;
+    opacity: 0;
+  
+  }
+  @keyframes showText{
+    100%{
+      opacity: 1;
+  
+    }
+  }
+
+
+
+
+  /* Right Side - Professional Skills */
+  .redial-bars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  .redial-bar {
+    width: 140px;
+    height: 140px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #012290f7;
+  }
+  
+  .redial-bar svg {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .progress-bar {
+    stroke-width: 10;
+    stroke: #444;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+  }
+  
+  .path {
+    stroke-width: 10;
+    stroke: #0ef;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-path 2s linear forwards;
+  }
+  
+  @keyframes animate-path {
+    100% { stroke-dashoffset: 50; }
+  }
+  
+  .redial-bar .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    font-weight: bold;
+    color: #0ef;
+  }
+  
+  .redial-bar .text {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+  }
+  /* //////////////////////////////////////////////////////////////////////////////////// */
+  /* //////////////////////////////////////////////////////////////////////// */
+
+  .container1 {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+  .Technical-bars .bar {
+  margin: 16px 0;
+  padding-right: 10px;
+  overflow: hidden;
+}
+
+.Technical-bars .bar .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.Technical-bars .progress-bar {
+  background: rgba(255, 255, 255, 0.1);
+  height: 10px; /* thinner bar */
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%; /* stay inside */
+  box-shadow: inset 0 0 3px #000;
+}
+
+.Technical-bars .progress-fill {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
+/* Base Track */
+.progress-track {
+  stroke-width: 10;
+  stroke: rgba(255, 255, 255, 0.15);
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 0;
+}
+
+/* Value Circle */
+.progress-value {
+  stroke-width: 10;
+  stroke: #0ef;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: calc(502 - (502 * var(--percent) / 100));
+  stroke-linecap: round;
+  animation: animateCircle 1.8s ease forwards;
+}
+
+@keyframes animateCircle {
+  from {
+    stroke-dashoffset: 502;
+  }
+  to {
+    stroke-dashoffset: calc(502 - (502 * var(--percent) / 100));
+  }
+}
+
+/* Perfect Circle Wrapper */
+.redial-bar {
+  width: 160px;
+  height: 160px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 0 20px #012290f7, 0 0 40px #012290f7;
+  transition: 0.4s ease;
+}
+
+.redial-bar:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px #0ef, 0 0 45px #0ef;
+}
+
+/* SVG Size */
+.redial-bar svg {
+  width: 140px;
+  height: 140px;
+}
+
+/* Percentage Text */
+.redial-bar .percentage {
+  position: absolute;
+  font-size: 22px;
+  font-weight: bold;
+  color: #0ef;
+}
+
+/* Skill Name */
+.redial-bar .text {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+
+/* Grid Layout */
+.redial-bars {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  justify-items: center;
+}

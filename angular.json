@@ -19,6 +19,7 @@
             "polyfills": [
               "zone.js"
             ],
+            
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
@@ -26,7 +27,9 @@
             ],
             "styles": [
               "src/styles.css"
+               
             ],
+            
             "scripts": [],
             "server": "src/main.server.ts",
             "prerender": true,
@@ -96,5 +99,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "4a41f602-121a-4282-b884-ccc3bcab2c7c"
   }
 }

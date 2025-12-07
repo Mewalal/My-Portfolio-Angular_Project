@@ -1,0 +1,86 @@
+<section class="contact" id="contact">
+  <div class="contact-text">
+    <h2>Contact <span>Me</span></h2>
+    <h4>Let's Work Together</h4>
+    <p>
+      I’m excited to collaborate on building responsive, user-friendly, and
+      performance-driven web applications.
+      <br /><br />
+      I specialize in both frontend and backend development using technologies
+      like Angular Java, and Spring Boot — ensuring full-stack solutions that
+      are scalable and maintainable.
+    </p>
+
+    <ul class="contact-list">
+      <li><i class="bx bxs-send"></i> Mewalalloniya004&#64;gmail.com</li>
+      <li><i class="bx bxs-phone"></i>+91 7021278920</li>
+    </ul>
+    <div class="contact-icons">
+      <a
+        href="https://www.facebook.com/share/1Drk6WxUVJ/"
+        target="_blank"
+        style="--i: 7"
+      >
+        <i class="bx bxl-facebook"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/itsme.ajjay920?igsh=NHNobnlmdDFrbGM5"
+        target="_blank"
+        style="--i: 8"
+      >
+        <i class="bx bxl-instagram"></i>
+      </a>
+      <a href="https://wa.me/7021278920" target="_blank" style="--i: 9">
+        <i class="bx bxl-whatsapp"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="contact-form">
+    <form (ngSubmit)="sendEmail(contactForm)" #contactForm="ngForm">
+      <h2>Contact Me</h2>
+      <input
+        type="text"
+        [(ngModel)]="formData.from_name"
+        name="from_name"
+        placeholder="Enter your name"
+        required
+        minlength="3"
+        pattern="[A-Za-z ]+"
+        title="Name should contain only letters and at least 3 characters."
+      />
+
+      <input
+        type="email"
+        [(ngModel)]="formData.from_email"
+        name="from_email"
+        placeholder="Enter your email"
+        required
+        title="Please enter a valid email address."
+      />
+
+      <input
+        type="text"
+        [(ngModel)]="formData.subject"
+        name="subject"
+        placeholder="Enter your subject"
+        required
+        minlength="3"
+        title="Subject must be at least 3 characters long."
+      />
+
+      <textarea
+        cols="40"
+        rows="10"
+        [(ngModel)]="formData.message"
+        name="message"
+        placeholder="Enter your message"
+        required
+        minlength="10"
+        title="Message should be at least 10 characters long."
+      ></textarea>
+
+      <button type="submit" class="send">Send</button>
+    </form>
+  </div>
+</section>
