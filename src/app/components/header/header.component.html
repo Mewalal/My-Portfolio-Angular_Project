@@ -1,4 +1,4 @@
-<header class="header">
+<!-- <header class="header">
     <a class="logo">MYPORTFOLIO</a>
     <nav class="navbar">
         <a routerLink="/" fragment="" style="--i:1" class="active">Home</a>
@@ -8,4 +8,24 @@
         <a routerLink="/project" fragment="project" style="--i:5">Project</a>
         <a routerLink="/contact" fragment="contact" style="--i:6">Contact</a>
     </nav>
+</header> -->
+<header class="header">
+  <a class="logo">MYPORTFOLIO</a>
+
+  <!-- Hamburger Icon -->
+  <div class="menu-toggle" (click)="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" [class.active]="menuOpen">
+    <a routerLink="/" (click)="closeMenu()" style="--i:1">Home</a>
+    <a routerLink="/about" fragment="about" (click)="closeMenu()" style="--i:2">About</a>
+    <a routerLink="/services" fragment="services" (click)="closeMenu()" style="--i:3">Services</a>
+    <a routerLink="/skills" fragment="skills" (click)="closeMenu()" style="--i:4">Skills</a>
+    <a routerLink="/project" fragment="project" (click)="closeMenu()" style="--i:5">Project</a>
+    <a routerLink="/contact" fragment="contact" (click)="closeMenu()" style="--i:6">Contact</a>
+  </nav>
 </header>

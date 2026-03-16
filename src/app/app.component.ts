@@ -19,7 +19,7 @@ export class AppComponent implements AfterViewInit {
 
   ngAfterViewInit() { // ✅ Ye function ensure karega ke DOM load hone ke baad script chale
           var typed = new Typed(".text", {
-            strings: ["Java  Developer", "Java Developer"],
+            strings: ["Java Full Developer", "Angular Developer"],
             typeSpeed: 100,
             backSpeed: 100,
             backDelay: 1000,

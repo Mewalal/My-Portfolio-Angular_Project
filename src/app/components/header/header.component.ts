@@ -1,3 +1,19 @@
+// import { Component } from '@angular/core';
+// import { RouterModule } from '@angular/router';
+
+// @Component({
+//   selector: 'app-header',
+//   standalone: true,
+//   imports: [RouterModule],
+//   templateUrl: './header.component.html',
+//   styleUrl: './header.component.css'
+// })
+// export class HeaderComponent {
+  
+  
+
+// }
+
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -9,7 +25,14 @@ import { RouterModule } from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  
-  
 
+  menuOpen = false;
+
+  toggleMenu(): void {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  closeMenu(): void {
+    this.menuOpen = false;
+  }
 }

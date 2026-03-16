@@ -17,14 +17,14 @@ export class ContactComponent {
     subject: '',
     message: ''
   };
-~
+
   sendEmail(form: NgForm) {
     const copyData = { ...this.formData };
 
    
     emailjs.send(
-      'service_nob415t',
-      'template_zmfr1o2',
+      'service_myportfolio',
+      'template_myportfolio',
       this.formData,
       '5e2vzSiSddXQcEgIR'
     )
